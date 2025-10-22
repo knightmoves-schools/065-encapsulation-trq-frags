@@ -1,7 +1,17 @@
+class Rectangle {
+    constructor(length, height) {
+        this.length = length;
+        this.height = height;
+    }
 
-let length = 5;
-let height = 10;
-
-function calculateArea(length, height){
-    return length * height;
+    calculateArea() {
+        return this.length * this.height;
+    }
 }
+
+const length = 5;
+const height = 10;
+
+const rect = new Rectangle(length, height);
+
+console.log(rect.calculateArea());
